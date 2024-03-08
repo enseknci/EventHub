@@ -1,0 +1,99 @@
+@import url("https://use.typekit.net/hez6kws.css");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.logo-list-container {
+  display: flex;
+  align-items: center;
+  margin-left: 360px; /* Logo ve menüyü sağa doğru 20 piksel kaydırır */
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 1px;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 10px;
+  margin-left: 2px;
+  padding-right: 10px;
+  border-right: 2px solid #c4b5b8;
+}
+
+.navbar li a {
+  color: black;
+  font-family: "roboto-condensed", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #d0021b;
+  transition: width 0.5s ease;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+  background-color: #d0021b;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 500px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "inherit";
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.search-box button {
+  background-color: rgb(255, 255, 255);
+  color: #88797c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

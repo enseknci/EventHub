@@ -1,0 +1,25 @@
+.event-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Kartlar sırasıyla yan yana sıralandığında, eğer ekran yeterli alan sağlamıyorsa alt satıra geçmelerini sağlar */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  margin: 100px;
+}
+
+.event-card {
+  width: 300px; /* Kartların genişliği, istediğiniz boyutlara göre ayarlayabilirsiniz */
+  border: 1px solid #ccc; /* Kart sınırlarını belirler */
+  border-radius: 5px; /* Kartın kenarlarını yuvarlar */
+  overflow: hidden; /* İçeriği sınırlar */
+  margin: 100px;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto; /* Resmin orijinal boyut oranını korur */
+}
+
+.event-details {
+  padding: 20px; /* Etkinlik detaylarının içeriğe boşluk ekler */
+}
+
+/* Diğer stil kuralları */

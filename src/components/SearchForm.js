@@ -6,6 +6,7 @@ export const SearchForm = () => {
   return (
     <div className="SearchBar">
       <Box sx={{ minWidth: 170 }} className="Box">
+        <span className="DetailSearch">Detaylı Arama</span>
         <Box className="Box-1">
           <TextField label="Şehir Seçiniz" select fullWidth>
             <MenuItem value="İstanbul">İstanbul</MenuItem>

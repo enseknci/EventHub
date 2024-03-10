@@ -18,5 +18,12 @@
 }
 .Box-4 {
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 30px;
+}
+.DetailSearch {
+  font-size: large;
+  padding-top: 15px;
+  padding-right: 50px;
+  font-family: "roboto-condensed", sans-serif;
+  font-weight: bold;
 }

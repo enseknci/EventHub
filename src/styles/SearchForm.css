@@ -1,0 +1,22 @@
+.SearchBar {
+  background-color: #f2f2f2;
+  margin-top: 1px;
+}
+.Box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.Box-1 {
+  width: 160px;
+}
+.Box-2 {
+  padding-left: 10px;
+}
+.Box-3 {
+  padding-left: 10px;
+}
+.Box-4 {
+  padding-top: 10px;
+  padding-left: 10px;
+}

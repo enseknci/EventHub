@@ -27,6 +27,10 @@ nav {
   width: 120px;
   height: auto;
 }
+.logo-container:hover img {
+  opacity: 0.6; /* veya istediğiniz bir sayı, 1 tam opak, 0 tamamen saydam */
+  transition: opacity 0.1s ease;
+}
 
 .navbar {
   list-style-type: none;
@@ -72,6 +76,7 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 500px;
+  position: relative;
 }
 
 .search-box {
@@ -80,20 +85,30 @@ nav {
 }
 
 .search-box input {
-  width: 200px;
-  padding: 5px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: "inherit";
-  font-size: 11px;
-  font-weight: bold;
+  width: 250px; /* Input genişliğini artır */
+  padding: 10px 35px 10px 10px; /* İkon için sağ padding ekle */
+  font-size: 14px; /* Yazı boyutunu büyüt */
+  border: 2px solid #ccc; /* İnput kenarlık kalınlığını artır */
+  border-radius: 5px; /* Kenarları yuvarlak yap */
+  font-family: "roboto-condensed", sans-serif;
 }
 
 .search-box button {
-  background-color: rgb(255, 255, 255);
-  color: #88797c;
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px; /* Buton genişliğini ayarla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-weight: #88797c;
+}
+
+/* Butonun üzerine gelindiğinde ikonun rengini değiştir */
+.search-box button:hover {
+  color: #962c39;
 }

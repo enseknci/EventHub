@@ -1,0 +1,40 @@
+/* Footer.css */
+
+.footer {
+  background-color: #d0021b; /* Kırmızı arka plan */
+  color: white; /* Beyaz metin rengi */
+  padding: 20px; /* Kenar boşlukları */
+  text-align: center; /* İçeriği ortala */
+}
+
+.footer-content {
+  background-color: white; /* Orta beyaz alan */
+  padding: 20px;
+  border-radius: 10px; /* Kenar yumuşatma */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  max-width: 800px; /* Maksimum genişlik ayarı */
+  margin: 0 auto; /* Ortala */
+  font-family: "Roboto", sans-serif; /* Roboto fontu */
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 10px;
+  color: #c62828; /* Başlık rengi kırmızı */
+  font-weight: bold; /* Kalın font */
+}
+
+.footer-links p,
+.footer-contact p {
+  margin: 5px 0;
+  color: black; /* Paragraf rengi siyah */
+  font-weight: bold; /* Kalın font */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: white; /* Alt yazı rengi beyaz */
+  font-weight: bold; /* Kalın font */
+  font-family: "Roboto", sans-serif; /* Roboto fontu */
+}

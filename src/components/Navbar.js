@@ -7,23 +7,25 @@ const Navbar = (props) => {
       <nav>
         <div className="logo-list-container">
           <div className="logo-container">
-            <img src={props.logo} alt="Event Hub" className="logo" />
+            <a href="/">
+              <img src={props.logo} alt="Event Hub" className="logo" />
+            </a>
           </div>
           <ul className="navbar">
             <li>
-              <a href="#">Futbol</a>
+              <a href="/futbol">Futbol</a>
             </li>
             <li>
-              <a href="#">Müzik</a>
+              <a href="/müzik">Müzik</a>
             </li>
             <li>
-              <a href="#">Sahne</a>
+              <a href="/sahne">Sahne</a>
             </li>
             <li>
-              <a href="#">Müze</a>
+              <a href="/müze">Müze</a>
             </li>
             <li>
-              <a href="#">Workshop</a>
+              <a href="/workshop">Workshop</a>
             </li>
           </ul>
         </div>

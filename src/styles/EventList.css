@@ -1,0 +1,72 @@
+/* EventList.css */
+
+/* Etkinlik listesini ortalar */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Her bir etkinlik kutucuğu için stil */
+.event-box {
+  width: calc(
+    33.33% - 40px
+  ); /* Her bir kutunun genişliğini üçte birine ayarlar ve kenar boşluklarını hesaplar */
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(165, 72, 72, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* İçeriği yatayda ortala */
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Etkinlik logoları */
+.event-logo {
+  width: 570px; /* Logoların genişliğini ayarlar */
+  height: auto; /* Otomatik yükseklik */
+  margin-right: 10px; /* Logolar arasına boşluk ekler */
+}
+
+/* Etkinlik detayları */
+.event-details {
+  font-family: "NeusaNext Regular", sans-serif; /* Yazı fontu */
+  font-size: 14px; /* Yazı boyutu */
+  opacity: 0.7; /* Yazıyı %70 şeffaf yapar */
+}
+
+/* Etkinlik başlığı */
+.event-name {
+  font-size: 16px; /* Başlık boyutunu ayarlar */
+  font-weight: bold; /* Başlık kalın yapar */
+}
+
+/* Etkinlik bilgileri */
+.event-info {
+  display: flex;
+  flex-direction: column; /* Bilgileri dikey hizalar */
+}
+
+/* İkonlar */
+.event-info svg {
+  margin-right: 3px; /* İkonların sağ tarafına biraz boşluk ekler */
+  color: red; /* İkonların rengini belirler */
+}
+
+/* Efekt durumu */
+.event-box:hover {
+  transform: scale(1.05); /* Kutuyu %5 büyütür */
+}
+
+/* Name ve location alt alta, Date ve Time alt alta */
+.event-details > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name ve location sol tarafta, Date ve Time sağ tarafta */
+.event-details > div:first-child {
+  margin-right: auto;
+}

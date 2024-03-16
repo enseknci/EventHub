@@ -5,6 +5,8 @@ import "./styles/navbar.css";
 import Routes from "./components/Routes";
 import SearchForm from "./components/SearchForm";
 import "./styles/SearchForm.css";
+import Footer from "./components/Footer";
+import "./styles/Footer.css";
 
 const App = () => {
   const handleSearch = (formData) => {
@@ -23,6 +25,9 @@ const App = () => {
       </div>
       <div>
         <Routes />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

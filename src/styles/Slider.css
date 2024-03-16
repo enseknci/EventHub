@@ -1,0 +1,45 @@
+.gallery-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ekranı kaplayan resimler için taşma gizlemesi */
+  position: relative;
+  margin-top: 30px;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 1s ease; /* Geçiş efektini yavaşlatmak için 1 saniyeye ayarlandı */
+}
+
+.gallery-image {
+  width: 635px; /* Resim genişliği */
+  height: 357px; /* Resim yüksekliği */
+  margin-right: 10px; /* Resimler arasındaki boşluk */
+  transition: transform 0.5s ease; /* Resimler üzerine gelindiğinde efekt için geçiş efekti tanımlandı */
+}
+
+.gallery-image:hover {
+  transform: scale(1.1); /* Resmin boyutunu büyütme efekti */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}

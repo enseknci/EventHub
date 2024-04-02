@@ -3,25 +3,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ekranı kaplayan resimler için taşma gizlemesi */
   position: relative;
   margin-top: 30px;
+  transition: transform 1.5s ease-in-out;
 }
 
 .image-container {
   display: flex;
-  transition: transform 1s ease; /* Geçiş efektini yavaşlatmak için 1 saniyeye ayarlandı */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 .gallery-image {
-  width: 635px; /* Resim genişliği */
-  height: 357px; /* Resim yüksekliği */
-  margin-right: 10px; /* Resimler arasındaki boşluk */
-  transition: transform 0.5s ease; /* Resimler üzerine gelindiğinde efekt için geçiş efekti tanımlandı */
+  width: 635px; /* Görsel genişliği */
+  height: 357px; /* Görsel yüksekliği */
+  margin-right: 10px;
+  transition: transform 0.5s ease;
+}
+
+.gallery-image:last-child {
+  margin-right: 0;
 }
 
 .gallery-image:hover {
-  transform: scale(1.1); /* Resmin boyutunu büyütme efekti */
+  transform: scale(1.1);
 }
 
 .arrow {
@@ -34,6 +39,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .left-arrow {

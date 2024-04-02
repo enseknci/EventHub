@@ -9,16 +9,21 @@ function HomePage() {
         <Slider /> {/* Slider bileşenini burada kullanıyoruz */}
       </div>
       <div>
-        <h2
+        <h1
           style={{
-            fontFamily: '"Roboto Concensed", serif !important',
-            fontWeight: "100 !important",
-            color: "red",
+            marginTop: "20px",
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: "bold",
+            fontSize: "2.4em",
+            color: "#E53935", // Koyu bir kırmızı tonu
             textAlign: "center",
+            textTransform: "uppercase", // Tüm harfleri büyük harfe çevir
+            letterSpacing: "2px", // Harfler arası boşluğu artır
           }}
         >
           TÜM ETKİNLİKLER
-        </h2>
+        </h1>
+
         <AllEvent />
       </div>
     </>

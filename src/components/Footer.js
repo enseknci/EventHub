@@ -14,61 +14,61 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="footer-col">
-            <h4>company</h4>
+            <h4>EVENTHUB</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                <a href="#">Hakkımızda</a>
               </li>
               <li>
-                <a href="#">our services</a>
+                <a href="#">Sıkça sorulan sorular</a>
               </li>
               <li>
-                <a href="#">privacy policy</a>
+                <a href="#">Kampanyalar</a>
               </li>
               <li>
-                <a href="#">affiliate program</a>
+                <a href="#">Hediye Kart</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>get help</h4>
+            <h4>BİLGİLENDİRME</h4>
             <ul>
               <li>
-                <a href="#">FAQ</a>
+                <a href="#">satış noktaları</a>
               </li>
               <li>
-                <a href="#">shipping</a>
+                <a href="#">satış sözleşmesi</a>
               </li>
               <li>
-                <a href="#">returns</a>
+                <a href="#">gizlilik ve güvenlik</a>
               </li>
               <li>
-                <a href="#">order status</a>
+                <a href="#">üyelik sözleşmesi</a>
               </li>
               <li>
-                <a href="#">payment options</a>
+                <a href="#">iletişim</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>online shop</h4>
+            <h4>Bize ulaşın</h4>
             <ul>
               <li>
-                <a href="#">watch</a>
+                <a href="#">Eventhub etkinlik</a>
               </li>
               <li>
-                <a href="#">bag</a>
+                <a href="#"> +05214352000</a>
               </li>
               <li>
-                <a href="#">shoes</a>
+                <a href="#">EVENTHUB</a>
               </li>
               <li>
-                <a href="#">dress</a>
+                <a href="#"> +05214352001</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>follow us</h4>
+            <h4>Created by Enes Ekinci</h4>
             <div className="social-links">
               <a href="#">
                 <FontAwesomeIcon icon={faFacebookF} />
@@ -79,7 +79,11 @@ const Footer = () => {
               <a href="#">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/enes-ekinci-629672143/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>

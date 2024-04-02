@@ -18,15 +18,21 @@ function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === 0) {
+        return images.length - 3;
+      }
+      return prevIndex - 1;
+    });
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => {
+      if (prevIndex === images.length - 3) {
+        return 0;
+      }
+      return prevIndex + 1;
+    });
   };
 
   return (
@@ -35,10 +41,10 @@ function Slider() {
         {"<"}
       </div>
       <div className="image-container">
-        {images.slice(currentIndex, currentIndex + 5).map((image, index) => (
+        {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
           <img
             key={index}
-            src={image} // Resim dosyasının doğrudan yolunu belirtiyoruz
+            src={image}
             alt={`Image ${index + 1}`}
             className="gallery-image"
           />

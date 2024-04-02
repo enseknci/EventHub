@@ -1,19 +1,11 @@
 import React from "react";
+import EventList from "../components/EventList";
+import futbolData from "../Data/futbolData";
 
 function FutbolPage() {
   return (
-    <div className="container">
-      <header>
-        <h1>Detay Sayfası Başlığı</h1>
-      </header>
-      <div className="row">
-        <div className="col-md-8">
-          <div className="detail-content">
-            <p>Detay içeriği buraya gelecek.</p>
-          </div>
-        </div>
-        <div className="col-md-4"></div>
-      </div>
+    <div className="col-md-8">
+      <EventList events={futbolData} />
     </div>
   );
 }

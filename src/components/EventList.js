@@ -11,22 +11,18 @@ const EventList = ({ events }) => {
         <div key={index} className="event-box">
           <div className="event-content">
             <img src={event.image} alt={event.name} className="event-logo" />{" "}
-            {/* Logo eklendi */}
             <div className="event-details">
-              <h3 className="event-name">{event.name}</h3> {/* Başlık */}
+              <h3 className="event-name">{event.name}</h3>
               <div className="event-info">
                 <p>
                   <EventIcon /> {event.date}
                 </p>{" "}
-                {/* Tarih */}
                 <p>
                   <ScheduleIcon /> {event.time}
                 </p>{" "}
-                {/* Saat */}
                 <p>
                   <LocationOnIcon /> {event.location}
                 </p>{" "}
-                {/* Konum */}
               </div>
             </div>
           </div>

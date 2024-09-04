@@ -10,7 +10,6 @@ import "./styles/Footer.css";
 
 const App = () => {
   const handleSearch = (formData) => {
-    // Bu kısımda formData kullanılarak arama işlemi gerçekleştirilir
     console.log("Arama verisi:", formData);
   };
 

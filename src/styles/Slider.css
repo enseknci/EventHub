@@ -1,51 +1,31 @@
 .gallery-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-top: 30px;
-  transition: transform 1.5s ease-in-out;
+  overflow: hidden;
 }
 
 .image-container {
   display: flex;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  animation: slide 20s infinite;
+}
+
+.gallery-slide {
+  flex: 0 0 auto; /* Flex öğelerinin boyutları otomatik olacak şekilde ayarlanır */
 }
 
 .gallery-image {
   width: 635px; /* Görsel genişliği */
   height: 357px; /* Görsel yüksekliği */
-  margin-right: 10px;
-  transition: transform 0.5s ease;
+  object-fit: cover; /* Resimlerin container'a sığması için */
 }
 
-.gallery-image:last-child {
-  margin-right: 0;
-}
-
-.gallery-image:hover {
-  transform: scale(1.1);
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Başlangıç pozisyonu */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Son pozisyon -100% (yani sola kaydırıyoruz) */
+  }
 }

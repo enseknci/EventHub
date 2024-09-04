@@ -18,40 +18,34 @@ function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrev = () => {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex === 0) {
-        return images.length - 3;
-      }
-      return prevIndex - 1;
-    });
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex === images.length - 3) {
-        return 0;
-      }
-      return prevIndex + 1;
-    });
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
     <div className="gallery-container">
-      <div className="arrow left-arrow" onClick={goToPrev}>
-        {"<"}
-      </div>
       <div className="image-container">
-        {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
-          <img
+        {images.map((image, index) => (
+          <div
             key={index}
-            src={image}
-            alt={`Image ${index + 1}`}
-            className="gallery-image"
-          />
+            className={
+              index === currentIndex ? "gallery-slide active" : "gallery-slide"
+            }
+          >
+            <img
+              src={image}
+              alt={`Image ${index + 1}`}
+              className="gallery-image"
+            />
+          </div>
         ))}
-      </div>
-      <div className="arrow right-arrow" onClick={goToNext}>
-        {">"}
       </div>
     </div>
   );
